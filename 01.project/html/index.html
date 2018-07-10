@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	
+	<title>Badminton Federation Of The Republic Of Tatarstan</title>
+
+	<!-- <link rel="stylesheet" href="C:\Users\пользователь\Desktop\practice\home\myProject\html\style\mainStyle.css"> -->
+	<link rel="stylesheet" href="style\mainStyle.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  	  	<div class="container-fluid">
+  	  		<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #008080; color: white;">
+  	  				<!-- href="C:\Users\пользователь\Desktop\practice\home\myProject\index.html" 
+  	  					-->
+  	  				<a 	class="navbar-brand"
+  	  					href="index.html" 
+  	  					style="color: white"><!-- 
+  	  					src="C:\Users\пользователь\Desktop\practice\home\myProject\html\img\logo.PNG" -->
+	  					<span style="font-size: 23px;"><img src="img\logo.PNG" class="img-fluid" style="width:30px; height: 30px;">Badminton Federation <br> Of The Republic Of Tatarstan</span> 
+	    			</a>		
+	    			<button class="navbar-toggler"
+	    					type="button"
+	    					data-toggle="collapse"
+	    					data-target="#navbar1"
+	    					style="font-size: 30px; border-color: #008080;">
+	    				<span class="navbar-toggler-icon"></span>
+	    			</button>
+	
+	    		<div class="collapse navbar-collapse" id="navbar1">
+	    			<ul class="navbar-nav mr-auto ">
+	    				<li class="nav-item">
+	    					<a class="nav-link" href="Athletes.html">
+	    					Athletes
+		    					</a>
+		    			</li>
+		    			<li class="nav-item">
+		    				<a class="nav-link" href="Coaches.html">
+		    				Coaches
+		    				</a>
+		    			</li>
+		    			<li class="nav-item"> 
+		    				<a class="nav-link" href="">
+		    				Info
+		    				</a>
+		    			</li>
+		    			<li class="nav-item"> 
+		    				<a class="nav-link" href="">
+		    				Rating
+		    				</a>
+		    			</li>
+		    		</ul>
+		    		<button type="button"
+	    					class="btn btn-primary sign-up"
+	    					onclick="window.location='Registration.html'">
+	    				Sign up
+	    			</button>
+		    		<button type="button"
+	    						class="btn btn-primary sign-in"
+	    						data-toggle="modal"
+		   						data-target="#myModal"> 
+		   					Sign in
+		    		</button>
+				</div>
+			</nav>
+		</div>	
+
+
+		<div class="modal" id="myModal">
+			<div class="modal-dialog" style="padding-top: 200px">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title"> Sign in to system </h5>
+					</div>
+					<div class="modal-body">
+						<p><b>Enter your handle and password to login</b></p>
+						<div class="input-group mb-3">
+							<input class ="form-control" id="Handle" placeholder="Handle">
+						</div>
+						<div class="input-group mb-3">
+							<input type="password" class="form-control" id="Password" placeholder="Password">
+						</div>
+						<a href="" style="color: #008080">Having trouble logging in?</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" 
+								class="btn btn-primary" 
+								style="border-color: white; background-color: #008080; color: white"
+								data-dismiss="modal"> 
+							Sign in</button>
+						<button type="button"
+								class="btn btn-danger"
+								data-dismiss="modal">
+							Close			
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container" style="padding-top: 130px;">
+			<div class="row">
+				<div class="container">
+					<h1> The system is designed to store data about athletes and coaches. </h1>
+					<p> You can enter the handle of the user to search for information about him </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-header" style="background-color: #008080; color: white;">
+							Search User
+						</div>
+						<div class="card-body">
+							<div class="input-group mb-3">
+							<div class="input-group-prepand">
+								<span class="input-group-text" style="background-color: #008080; color: white;">@</span>
+							</div>
+							<input  type="text"
+									placeholder="Handle"
+									class="form-control">
+							</div>
+						</div>
+						<div class="card-footer">
+							<button type="button"
+									class="btn btn-primary"
+									style="border-color: white; background-color: #008080; color: white; float: right;">
+								Search
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	    <div class="container-fluid" style="padding-top: 250px;">
+			<footer class="footer fixed-bottom" style="background-color: #008080; color: white;">
+				<div class="container-fluid" style="color: white">
+					<ul style="list-style-type: none;"> 
+	  					<span style="font-size: 20px;"> 
+		  					<li><span style="word-spacing: 30px">fedbadmrt@mail.ru 221-24-36 </span> </li>
+			  				<li> Official site  <a href="http://www.badmintonrt.ru" style="color: #90EE90;">badmintonrt.ru</a> 
+						<span class="text" style="color: white; font-size: 18px; float: right;">&copy;2018 Anna Kuzmenko</p> </span> </li>
+						</span>
+		    		</ul>
+				</div>
+			</footer>	
+		</div>
+  </body>
+</html> 

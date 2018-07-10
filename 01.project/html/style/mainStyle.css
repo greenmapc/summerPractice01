@@ -1,0 +1,44 @@
+.html {
+	height: 100%;
+}
+.row {
+	padding-top: 40px;
+}
+.nav-link:hover {
+	color:#B0C4DE !important;
+}
+
+.nav-link {
+	color: white !important; 
+	font-size: 23px !important;
+}
+nav {
+	font-family: 'Francois One', sans-serif !important;
+}
+body {
+	font-family: 'Poppins', sans-serif !important;
+	background: url(img/1.PNG) no-repeat;
+	background-position: right 85%;
+	background-size: 400px;
+	background-attachment: fixed;
+}
+.sign-up {
+	border-color: #32CD32 !important;
+	background-color: #32CD32 !important;
+	color: white !important;
+	font-size: 20px !important;
+}
+.sign-in {
+	border-color: #008080 !important;
+	background-color: white !important;
+	color: #008080 !important;
+	font-size: 20px !important;
+	margin: 0px 0px 0px 15px !important;
+}
+.sign-in:hover {
+	background-color: #ebedf1!important;
+}
+
+.sign-up:hover {
+	background-color: #59d67a !important;
+}

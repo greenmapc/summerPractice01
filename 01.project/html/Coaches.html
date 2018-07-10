@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Coaches</title>
+
+    <link rel="stylesheet" href="style\coachesStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #008080; color: white;">
+            <a 	class="navbar-brand"
+                  href="index.html"
+                  style="color: white">
+                <span style="font-size: 23px;"><img src="img\logo.PNG" class="img-fluid" style="width:30px; height: 30px;">Badminton Federation <br> Of The Republic Of Tatarstan</span>
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar1"
+                    style="font-size: 30px; border-color: #008080;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Athletes.html">
+                            Athletes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Coaches.html">
+                            Coaches
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Info
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Rating
+                        </a>
+                    </li>
+                </ul>
+                <button type="button"
+                        class="btn btn-primary sign-up"
+                        onclick="window.location='Registration.html'">
+                    Sign up
+                </button>
+                <button type="button"
+                        class="btn btn-primary sign-in"
+                        data-toggle="modal"
+                        data-target="#myModal">
+                    Sign in
+                </button>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog" style="padding-top: 200px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Sign in to system </h5>
+                </div>
+                <div class="modal-body">
+                    <p><b>Enter your handle and password to login</b></p>
+                    <div class="input-group mb-3">
+                        <input class ="form-control" id="Handle" placeholder="Handle">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    </div>
+                    <a href="" style="color: #008080">Having trouble logging in?</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button"
+                            class="btn btn-primary"
+                            style="border-color: white; background-color: #008080; color: white"
+                            data-dismiss="modal">
+                        Sign in</button>
+                    <button type="button"
+                            class="btn btn-danger"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="padding-top: 150px">
+        <div class="row">
+            <div class="col-md-4 col-xs-12 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="title-table-coach"> You can sort the list by criterion </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 col-sm-6 col-xs-6 col-lg-7">
+                                    <img src="img\coachPage.PNG" class="img-fluid" style="width: 120px; height: 170px; transform: scale(-1, 1);">
+                                </div>
+                                <div class="col-md-12 col-xs-4 col-sm-4 col-lg-5"  style="padding-top: 20px;">
+                                    <p><input type="radio" name="coachSort" checked="true"> Name</p>
+                                    <p><input type="radio" name="coachSort"> Group</p>
+                                    <p><input type="radio" name="coachSort"> Category</p>
+                                    <p><input type="radio" name="coachSort"> Age</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" container" style="padding-top: 15px">
+                            <div class="row justify-content-center">
+                                <button class="btn btn-primary btn-coaches">
+                                  Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-xs-12 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="title-table-coach"> Our Coaches </span>
+                        <input type="text" class="form-control" placeholder="Search" style="width: 200px; height: 30px; float: right;">
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                        <table class="table table-border table-hover table-fluid">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Groups</th>
+                                <th>Category</th>
+                                <th>Contacts</th>
+                            </tr>
+                            </thead>
+                            <tbody id="coachesTable">
+
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid" style="padding-top: 200px;">
+        <footer class="footer fixed-bottom" style="background-color: #008080; color: white;">
+            <div class="container-fluid" style="color: white">
+                <ul style="list-style-type: none;">
+	  					<span style="font-size: 20px;">
+		  					<li><span style="word-spacing: 30px">fedbadmrt@mail.ru 221-24-36 </span> </li>
+			  				<li>Official site  <a href="http://www.badmintonrt.ru" style="color: #90EE90;">badmintonrt.ru</a>
+						<span class="text" style="color: white; font-size: 18px; float: right;">&copy;2018 Anna Kuzmenko</p> </span> </li>
+						</span>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>
