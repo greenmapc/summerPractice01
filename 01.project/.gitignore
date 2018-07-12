@@ -1,3 +1,5 @@
+*.class
 .idea/
 somePictures
 node_modules
+.data/

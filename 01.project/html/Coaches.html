@@ -71,33 +71,33 @@
 
     <div class="modal" id="myModal">
         <div class="modal-dialog" style="padding-top: 200px">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"> Sign in to system </h5>
-                </div>
-                <div class="modal-body">
-                    <p><b>Enter your handle and password to login</b></p>
-                    <div class="input-group mb-3">
-                        <input class ="form-control" id="Handle" placeholder="Handle">
+            <form action="/login">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"> Sign in to system </h5>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control" id="Password" placeholder="Password">
+                    <div class="modal-body">
+                        <p><b>Enter your handle and password to login</b></p>
+                        <div class="input-group mb-3">
+                            <input type="text" name="handle" class ="form-control" id="Handle" placeholder="Handle">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" name="password" class="form-control" id="Password" placeholder="Password">
+                        </div>
+                        <a href="" style="color: #008080">Having trouble logging in?</a>
                     </div>
-                    <a href="" style="color: #008080">Having trouble logging in?</a>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-primary"
+                               style="border-color: white; background-color: #008080; color: white"
+                               value="Sign in">
+                        <button type="button"
+                                class="btn btn-danger"
+                                data-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button"
-                            class="btn btn-primary"
-                            style="border-color: white; background-color: #008080; color: white"
-                            data-dismiss="modal">
-                        Sign in</button>
-                    <button type="button"
-                            class="btn btn-danger"
-                            data-dismiss="modal">
-                        Close
-                    </button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 

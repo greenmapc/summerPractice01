@@ -19,14 +19,14 @@
   <body>
   	  	<div class="container-fluid">
   	  		<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #008080; color: white;">
-  	  				<!-- href="C:\Users\пользователь\Desktop\practice\home\myProject\index.html" 
+  	  				<!-- href="C:\Users\пользователь\Desktop\practice\home\myProject\index.html"
   	  					-->
   	  				<a 	class="navbar-brand"
-  	  					href="index.html" 
-  	  					style="color: white"><!-- 
+  	  					href="index.html"
+  	  					style="color: white"><!--
   	  					src="C:\Users\пользователь\Desktop\practice\home\myProject\html\img\logo.PNG" -->
-	  					<span style="font-size: 23px;"><img src="img\logo.PNG" class="img-fluid" style="width:30px; height: 30px;">Badminton Federation <br> Of The Republic Of Tatarstan</span> 
-	    			</a>		
+	  					<span style="font-size: 23px;"><img src="img\logo.PNG" class="img-fluid" style="width:30px; height: 30px;">Badminton Federation <br> Of The Republic Of Tatarstan</span>
+	    			</a>
 	    			<button class="navbar-toggler"
 	    					type="button"
 	    					data-toggle="collapse"
@@ -34,7 +34,7 @@
 	    					style="font-size: 30px; border-color: #008080;">
 	    				<span class="navbar-toggler-icon"></span>
 	    			</button>
-	
+
 	    		<div class="collapse navbar-collapse" id="navbar1">
 	    			<ul class="navbar-nav mr-auto ">
 	    				<li class="nav-item">
@@ -47,12 +47,12 @@
 		    				Coaches
 		    				</a>
 		    			</li>
-		    			<li class="nav-item"> 
+		    			<li class="nav-item">
 		    				<a class="nav-link" href="">
 		    				Info
 		    				</a>
 		    			</li>
-		    			<li class="nav-item"> 
+		    			<li class="nav-item">
 		    				<a class="nav-link" href="">
 		    				Rating
 		    				</a>
@@ -66,43 +66,42 @@
 		    		<button type="button"
 	    						class="btn btn-primary sign-in"
 	    						data-toggle="modal"
-		   						data-target="#myModal"> 
+		   						data-target="#myModal">
 		   					Sign in
 		    		</button>
 				</div>
 			</nav>
-		</div>	
-
+		</div>
 
 		<div class="modal" id="myModal">
 			<div class="modal-dialog" style="padding-top: 200px">
+				<form action="/login">
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title"> Sign in to system </h5>
 					</div>
 					<div class="modal-body">
 						<p><b>Enter your handle and password to login</b></p>
-						<div class="input-group mb-3">
-							<input class ="form-control" id="Handle" placeholder="Handle">
-						</div>
-						<div class="input-group mb-3">
-							<input type="password" class="form-control" id="Password" placeholder="Password">
-						</div>
+							<div class="input-group mb-3">
+								<input type="text" name="handle" class ="form-control" id="Handle" placeholder="Handle">
+							</div>
+							<div class="input-group mb-3">
+								<input type="password" name="password" class="form-control" id="Password" placeholder="Password">
+							</div>
 						<a href="" style="color: #008080">Having trouble logging in?</a>
 					</div>
 					<div class="modal-footer">
-						<button type="button" 
-								class="btn btn-primary" 
-								style="border-color: white; background-color: #008080; color: white"
-								data-dismiss="modal"> 
-							Sign in</button>
+						<input type="submit" class="btn btn-primary"
+							   style="border-color: white; background-color: #008080; color: white"
+							   value="Sign in">
 						<button type="button"
 								class="btn btn-danger"
 								data-dismiss="modal">
-							Close			
+							Close
 						</button>
 					</div>
 				</div>
+				</form>
 			</div>
 		</div>
 
