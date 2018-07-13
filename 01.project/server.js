@@ -3,7 +3,9 @@ const app = express();
 
 const fs = require('fs');
 
-require('./app/routes/index')(app, fs);
+require('./app/routes/infoRoutes')(app, fs);
+require('./app/routes/loginRoutes')(app, fs);
+require('./app/routes/registrationRoutes')(app, fs);
 
 app.use(express.static('html'));
 app.listen(80);
