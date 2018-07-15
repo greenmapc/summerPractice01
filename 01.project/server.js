@@ -3,10 +3,12 @@ const app = express();
 
 const fs = require('fs');
 
-require('./app/routes/infoRoutes')(app, fs);
-require('./app/routes/loginRoutes')(app, fs);
-require('./app/routes/registrationRoutes')(app, fs);
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: true }));
+
+require('./app/routes/index')(app, fs);
 
 app.use(express.static('html'));
 app.listen(80);
 console.log("Server started at 80");
+

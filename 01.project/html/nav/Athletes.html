@@ -12,61 +12,61 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="script/getAthletesScript.js"></script>
 
 </head>
-<body>
+<body onload="getAthletes()">
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #008080; color: white;">
-        <a 	class="navbar-brand"
-              href="index.html"
-              style="color: white">
-            <span style="font-size: 23px;"><img src="img\logo.PNG" class="img-fluid" style="width:30px; height: 30px;">Badminton Federation <br> Of The Republic Of Tatarstan</span>
-        </a>
-        <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbar1"
-                style="font-size: 30px; border-color: #008080;">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #008080; color: white;">
+            <!-- href="C:\Users\пользователь\Desktop\practice\home\myProject\index.html"
+                -->
+            <a 	class="navbar-brand"
+                  href="../index.html"
+                  style="color: white"><!--
+  	  					src="C:\Users\пользователь\Desktop\practice\home\myProject\html\img\logo.PNG" -->
+                <span style="font-size: 23px;"><img src="img\logo.PNG" class="img-fluid" style="width:30px; height: 30px;">Badminton Federation <br> Of The Republic Of Tatarstan</span>
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar1"
+                    style="font-size: 30px; border-color: #008080;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbar1">
-            <ul class="navbar-nav mr-auto ">
-                <li class="nav-item">
-                    <a class="nav-link" href="">
-                        Athletes
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Coaches.html">
-                        Coaches
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">
-                        Info
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">
-                        Rating
-                    </a>
-                </li>
-            </ul>
-            <button type="button"
-                    class="btn btn-primary sign-up"
-                    onclick="window.location='Registration.html'">
-                Sign up
-            </button>
-            <button type="button"
-                    class="btn btn-primary sign-in"
-                    data-toggle="modal"
-                    data-target="#myModal">
-                Sign in
-            </button>
-        </div>
-    </nav>
-</div>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Athletes.html">
+                            Athletes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Coaches.html">
+                            Coaches
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">
+                            Info
+                        </a>
+                    </li>
+                </ul>
+                <button type="button"
+                        class="btn btn-primary sign-up"
+                        onclick="window.location='../registration/Registration.html'">
+                    Register in the system
+                </button>
+                <!--<button type="button"-->
+                <!--class="btn btn-primary sign-in"-->
+                <!--data-toggle="modal"-->
+                <!--data-target="#myModal">-->
+                <!--Sign in-->
+                <!--</button>-->
+            </div>
+        </nav>
+    </div>
 
 
 <div class="modal" id="myModal">
@@ -107,33 +107,22 @@
         <div class="col-md-4 col-xs-12 col-sm-12">
             <div class="card">
                 <div class="card-header">
-                    <span class="title-table-athletes"> You can sort the list by criterion </span>
+                    <span class="title-table-coach"> News about the next competitions </span>
                 </div>
                 <div class="card-body">
                     <div class="container-fluid">
                         <div class="row justify-content-center">
-                            <div class=" col-md-12 col-xs-12 col-sm-12 col-lg-7">
-                                <img src="img\athletePage.PNG" class="img-fluid" style="width: 150px; height: 130px; margin-top: 20px">
+                            <div class="col-lg-12 well">
+                                <div class="thumbnail" style="background-color: #dbdde1">
+                                    <p><strong>Tournament "White Nights"</strong></p>
+                                    <p>From 28 June to 2 July in Gatchina</p>
+                                </div>
+                                <div class="thumbnail" style="background-color: #dbdde1">
+                                    <p><strong>VI All-Russian summer Universiade</strong></p>
+                                    <p>28 June 2018 in Saratov</p>
+                                </div>
                             </div>
-                            <div class="col-md-12 col-xs-12 col-sm-12 col-lg-5"  style="padding-top: 10px;">
-                                <input type="radio" name="athleteSort" checked="true" style="margin-bottom: 18px; margin-top: 10px;">
-                                Name <br>
-                                <input type="radio" name="athleteSort" style="margin-bottom: 18px">
-                                Group <br>
-                                <input type="radio" name="athleteSort" style="margin-bottom: 18px">
-                                Category <br>
-                                <input type="radio" name="athleteSort" style="margin-bottom: 18px">
-                                Age <br>
-                                <input type="radio" name="athleteSort">
-                                Rating <br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" container" style="padding-top: 15px">
-                        <div class="row justify-content-centerjustify-content-center">
-                            <button class="btn btn-primary btn-athletes">
-                                Update
-                            </button>
+
                         </div>
                     </div>
                 </div>
@@ -143,7 +132,6 @@
             <div class="card">
                 <div class="card-header">
                     <span class="title-table-athletes"> Our athletes </span>
-                    <input type="text" class="form-control" placeholder="Search" style="width: 200px; height: 30px; float: right;">
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -155,10 +143,11 @@
                                 <th>Group</th>
                                 <th>Coach</th>
                                 <th>Category</th>
-                                <th>Rating</th>
+                                <th>Handle</th>
                             </tr>
                             </thead>
                             <tbody id="athletesTable">
+
 
                             </tbody>
                         </table>
